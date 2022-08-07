@@ -13,8 +13,9 @@ A simple android Movie app built using MVVM architecture and Jetpack libraries t
 
 `git clone https://github.com/segunfrancis/Darum-Android-Assessment.git`
 - Import into android studio
-- Get your API key from [here](https://www.themoviedb.org/)
+- Get your API key from [here](https://developers.themoviedb.org/3/getting-started/introduction)
 - Navigate to the `local.properties` file and add a field for your api key as shown in the image below
+
   <img alt="image showing location of api key" src="screenshots/Screenshot 2022-08-07 at 23.17.40.png"/>
 - Build the project and run on an android device or emulator
 
@@ -44,8 +45,7 @@ A simple android Movie app built using MVVM architecture and Jetpack libraries t
 
 ## Author
 
-* **Segun Francis**
-- [LinkedIn](https://www.linkedin.com/in/segun-francis-302361a1)
+* [Segun Francis](https://www.linkedin.com/in/segun-francis-302361a1)
 
 
 ## License
