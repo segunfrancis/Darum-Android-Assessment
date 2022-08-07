@@ -17,4 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_popular_movies" />
+
+    <include
+        android:id="@+id/main_loading"
+        layout="@layout/layout_main_loading" />
+
+    <include
+        android:id="@+id/main_error"
+        layout="@layout/layout_main_error" />
 </androidx.constraintlayout.widget.ConstraintLayout>

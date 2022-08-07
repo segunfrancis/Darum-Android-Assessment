@@ -2,6 +2,7 @@ package com.segunfrancis.darumandroidassessment.ui.list.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -35,7 +36,21 @@ class PopularMoviesAdapter :
 
         fun bind(response: MovieResponse?) = with(binding) {
             movieTitle.text = response?.title
-            movieImage.loadImage(buildImageUrl(path = response?.backdrop_path))
+            movieImage.loadImage(
+                imageUrl = buildImageUrl(path = response?.backdrop_path),
+                loading = {
+                    movieImageLoader.isVisible = true
+                    movieImageLoaderError.isVisible = false
+                },
+                onSuccess = {
+                    movieImageLoader.isVisible = false
+                    movieImageLoaderError.isVisible = false
+                },
+                onFailure = {
+                    movieImageLoader.isVisible = false
+                    movieImageLoaderError.isVisible = true
+                }
+            )
         }
     }
 
