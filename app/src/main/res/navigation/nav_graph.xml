@@ -7,6 +7,6 @@
 
     <fragment
         android:id="@+id/ListFragment"
-        android:name="com.segunfrancis.darumandroidassessment.ListFragment"
+        android:name="com.segunfrancis.darumandroidassessment.ui.list.ListFragment"
         tools:layout="@layout/fragment_list" />
 </navigation>
