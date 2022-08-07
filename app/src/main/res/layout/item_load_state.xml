@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="52dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="@string/text_retry"
